@@ -13,6 +13,19 @@ import java.util.zip.ZipException;
  * 
  * Checked exceptions are checked by javac at compile time
  * Unchecked exceptions occur at runtime
+ * 
+ * final vs finally vs finalize
+ * final: equivalent of const. A final variable cannot be changed
+ * a final method can't be overridden, final class can't be
+ * extended
+ * 
+ * finally is a block in a try-catch series
+ * 
+ * finalize is a method that can be overridden, which does
+ * whatever you say it should do just before garbage collection
+ * 
+ * You have no say in when the GC runs, but you can beg it with
+ * System.gc()
  */
 public class ExceptionDemo {
     public static void main(String[] args) {
